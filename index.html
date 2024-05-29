@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>웹 스터디 ::: 여상수</title>
+  <title>웹 스터디 ::: 김동욱</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
     integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,27 +12,33 @@
 </head>
 
 <body>
+  
   <div id="head_title">
-    <h1>웹화면 구현 수업의 웹스터디 페이지</h1>
-    <h2><!-- TODO: 자기이름을 써주세요--></h2>
-    <p>
+    <h1 id="text">웹화면 구현 수업의 웹스터디 페이지</h1>
+    <h2 id="text">김동욱</h2>
+    <p id="text">
       안녕하세요!<br />
       <!-- TODO: 간단한 자기소개를 써주세요(1줄~2줄) -->
+      저는 목원대학교 컴퓨터공학과에 재학중인 김동욱입니다.
       <br /><br />
       <!-- FIXME: 폰트어썸에서 3개~5개 정도를 넣어주세요 -->
-      <i class="fa-brands fa-tiktok fa-2xl" style="color: #f20202"></i>
-      <i class="fa-brands fa-facebook fa-beat fa-2xl" style="color: #74c0fc"></i>
-      <i class="fa-brands fa-facebook fa-2xl" style="color: #74c0fc"></i>
+      <i class="fa-brands fa-youtube fa-bounce fa-xl" style="color: #d7193f;"></i>
+      <i class="fa-solid fa-house fa-xl" style="color: #940fd2;"></i>
+      <i class="fa-brands fa-github fa-bounce fa-xl"></i>
     </p>
   </div>
   <hr />
 
   <h1>애니메이션</h1>
 
-  <!-- TODO: 애니메이션 속성으로 전환 효과 제어하기 p.250 -->
+ 
+  <div id="ani3">애니메이션
+    <button id="start">▶️</button>
+    <button id="paused">⏸️</button> 
+  </div>
 
 
-  <!-- FIXME: 아래쪽 주석 삭제하기 -->
+  <div id="trans5">움직이는 박스</div>
   
   <h1>flex-container</h1>
 
@@ -40,54 +46,55 @@
     <!-- FIXME: 지금 예제를 대체하는 콘텐츠로, 영화 또는 드라마 콘텐츠 4개 작성 -->
     <div class="flex-item">
       <dl>
-        <dt>영화소개 : 듄2</dt>
+        <dt>드라마 소개 : 해를 품은 달</dt>
         <dd>
-          <a target="_blank" href="https://namu.wiki/w/%EB%93%84:%20%ED%8C%8C%ED%8A%B8%202"><img
-              src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20240207_151%2F1707288437263gBsdd_JPEG%2Fmovie_image.jpg"
+          <a target="_blank" href="https://namu.wiki/w/%ED%95%B4%EB%A5%BC%20%ED%92%88%EC%9D%80%20%EB%8B%AC(%EB%93%9C%EB%9D%BC%EB%A7%88)"><img
+              src="https://ojsfile.ohmynews.com/STD_IMG_FILE/2012/0224/IE001406563_STD.jpg"
               alt="" /></a>
-          2024년 2월 28일에 개봉한 드니 빌뇌브 감독의 듄 시리즈 실사영화.
-          2021년 영화 〈듄〉의 속편이다.
+              풋풋한 연우와 왕세자 훤의 첫만남, 그리고 첫사랑! 그리고 훤에게 반해버린 또다른 양반집 여식 보경. 우여곡절 끝에 연우는 훤의 세자빈에 간택되지만 이름 모를 병을 얻어 쫓겨나듯 출궁했다. 그리고 어느 날 조용히 숨을 거두었다 들었다.
+              그런데...8년이 지난 오늘, 죽어 무덤에 묻혔다던 연우 낭자가 훤의 눈앞에 나타난다! 그런데 연우 낭자가 아니라 무녀(巫女) 월이란다. 문득 훤은 8년 전 세자빈 허씨의 죽음에 의문이 생기기 시작하는데...
         </dd>
       </dl>
     </div>
     <div class="flex-item">
       <dl>
-        <dt>영화소개 : 냉정과 열정 사이</dt>
+        <dt>드라마 소개 : 태양의 후예</dt>
         <dd>
           <a target="_blank"
-            href="https://namu.wiki/w/%EB%83%89%EC%A0%95%EA%B3%BC%20%EC%97%B4%EC%A0%95%20%EC%82%AC%EC%9D%B4"><img
-              src="https://i.namu.wiki/i/nfVqC1FuFaC27Kf6J_wHxE858tdwwFyP_2wZo4qIIB1VxSnOF-PJ7NyHZz9uySo9bz3gc5lr4cJHAuWvT8QsLGh38N-b8ci42Ndh5hUgN7D_-abhZL8ZT35Jz3_dN2d8GAnVvx3RP3eeuSXfX3sxUw.webp"
+            href="https://namu.wiki/w/%ED%83%9C%EC%96%91%EC%9D%98%20%ED%9B%84%EC%98%88"><img
+              src="https://i.namu.wiki/i/t2r5qHMwfakwohLAOc7TZDQd3MQ7Jd_ShzcX-YzzBRN9CbYNhxeFivr67UsmI-0bbLYLj2kM5SmodyS_aO-diA.webp"
               alt="" /></a><br />
-          2001년에 타케노우치 유타카, 진혜림 주연의 영화로 제작되었다.
-          타다이마 오카에리 엔딩의 전형적인 영화.
+              그 어떤 재난 앞에서도 물러서지 않겠노라. 그 어떤 총구 앞에서도 이 땅의 평화를 지키겠노라.
+              오늘 수많은 유시진과 수많은 강모연은 엄숙히 선서했다.
+              그들의 선서가 이 세상의 모든 땅에서, 이 세상의 모든 태양 아래에서 지켜지기를 나는 응원했다.
         </dd>
       </dl>
     </div>
 
     <div class="flex-item">
       <dl>
-        <dt>넷플릭스 소개: 삼체</dt>
+        <dt>드라마 소개 : 
+          사랑의 불시착</dt>
         <dd>
           <a target="_blank"
-            href="https://namu.wiki/w/%EC%82%BC%EC%B2%B4%28%EB%AF%B8%EA%B5%AD%20%EB%93%9C%EB%9D%BC%EB%A7%88%29">
+            href="https://namu.wiki/w/%EC%82%AC%EB%9E%91%EC%9D%98%20%EB%B6%88%EC%8B%9C%EC%B0%A9">
             <img
-              src="https://i.namu.wiki/i/oX1oa1g4_3hjnOfbeiX1KlJ_pQfzE-BG1ydHvLl_PLAjq-UOOGbF4nL9j7Zq-Duua0zf_Thf__So00aDy_HqLz-9Tu-SKgMY9rj4yGk3rALLHD-VGx5IssQkwwu4v4G2ptTs6uvLoFdQwLGWQoEXGA.webp"
+              src="https://i.namu.wiki/i/eC_jcSUWjqBu1Igs7Q6OASrHfDKPre6AZ-TAB_sIR60ydXKyvzpiiX_g8G1XxmL75UMbmM7lG-Ddc9-j2as525zK7hJSgjRkztO9rG_lNitmSp6oI_n7xWuFiaJHJR_MJx4_hfrGxdrR0Fi1FRP4vw.webp"
               alt="" /></a>
-          “물리학은 존재하지 않는다”라는 유서를 남기고 자살한 동료 과학자
-          '양둥'의 죽음이 석연치 않았던 '왕먀오'는 ...!
+              어느 날 돌풍과 함께 패러글라이딩 사고로 북한에 불시착한 재벌 2세 패션업계 사장 윤세리와 그녀를 숨기고 지키다 사랑하게 되는 특급 장교 리정혁의 절대 극비 로맨스를 그린다.
         </dd>
       </dl>
     </div>
     </a>
-    <div class="flex-item">
+    <div class="flex-item" id="f4">
       <dl>
-        <dt>영화소개 : 범죄도시4</dt>
+        <dt>드라마 소개 : 눈물의 여왕</dt>
         <dd>
-          <a target="_blank" href="https://namu.wiki/w/%EB%B2%94%EC%A3%84%EB%8F%84%EC%8B%9C4"><img
-              src="https://i.namu.wiki/i/UV5cDIV4GTiR81tpwd8qsWzna_HaavSVxpgjwWoJgV9ydIbARV4-9_1KaBhQT8Esd20jCHUcgD8ZXm8pCJirRTIWeFbXs6xIGHFHDv6ywuWbDTk7X_afpPTjLXOltjfhNUDTSpaelAvhJsEU7wBSFA.webp"
+          <a target="_blank" href="https://namu.wiki/w/%EB%88%88%EB%AC%BC%EC%9D%98%20%EC%97%AC%EC%99%95"><img
+              src="https://i.namu.wiki/i/PUTXmvYSJ0akQjtfyx_WBPaybpZAEylv3XzzswLTU_QBu5323bluAl4TI0uPilyG_3jM84vBtZ7Onk-HfVIdifqqeJm-4tabSPwFOPwF93MdeFLEW0vFyhHNCbbihLx1RKJgX7bfLuQPZ1WPIGT6fQ.webp"
               alt="" /></a>
-          2024년 2월 28일에 개봉한 드니 빌뇌브 감독의 듄 시리즈 실사영화.
-          2021년 영화 〈듄〉의 속편이다.
+              퀸즈 그룹 재벌 3세, 백화점의 여왕 '홍해인'. 용두리 이장 아들, 슈퍼마켓 왕자 '백현우'.
+              3년차 부부의 아찔한 위기와 기적처럼 다시 시작되는 사랑 이야기
         </dd>
       </dl>
     </div>
@@ -99,59 +106,138 @@
     <!-- FIXME: 지금 예제를 대체하는 콘텐츠로, 영화 또는 드라마 콘텐츠 4개 작성 -->
     <div class="grid-item">
       <dl>
-        <dt>영화소개 : 듄2</dt>
+        <dt>드라마 소개 : 해를 품은 달</dt>
         <dd>
-          <a target="_blank" href="https://namu.wiki/w/%EB%93%84:%20%ED%8C%8C%ED%8A%B8%202"><img
-              src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20240207_151%2F1707288437263gBsdd_JPEG%2Fmovie_image.jpg"
+          <a target="_blank" href="https://namu.wiki/w/%ED%95%B4%EB%A5%BC%20%ED%92%88%EC%9D%80%20%EB%8B%AC(%EB%93%9C%EB%9D%BC%EB%A7%88)"><img
+              src="https://ojsfile.ohmynews.com/STD_IMG_FILE/2012/0224/IE001406563_STD.jpg"
               alt="" /></a>
-          2024년 2월 28일에 개봉한 드니 빌뇌브 감독의 듄 시리즈 실사영화.
-          2021년 영화 〈듄〉의 속편이다.
+              풋풋한 연우와 왕세자 훤의 첫만남, 그리고 첫사랑! 그리고 훤에게 반해버린 또다른 양반집 여식 보경. 우여곡절 끝에 연우는 훤의 세자빈에 간택되지만 이름 모를 병을 얻어 쫓겨나듯 출궁했다. 그리고 어느 날 조용히 숨을 거두었다 들었다.
+              그런데...8년이 지난 오늘, 죽어 무덤에 묻혔다던 연우 낭자가 훤의 눈앞에 나타난다! 그런데 연우 낭자가 아니라 무녀(巫女) 월이란다. 문득 훤은 8년 전 세자빈 허씨의 죽음에 의문이 생기기 시작하는데...
         </dd>
       </dl>
     </div>
     <div class="grid-item">
       <dl>
-        <dt>영화소개 : 냉정과 열정 사이</dt>
+        <dt>드라마 소개 : 태양의 후예</dt>
         <dd>
           <a target="_blank"
-            href="https://namu.wiki/w/%EB%83%89%EC%A0%95%EA%B3%BC%20%EC%97%B4%EC%A0%95%20%EC%82%AC%EC%9D%B4"><img
-              src="https://i.namu.wiki/i/nfVqC1FuFaC27Kf6J_wHxE858tdwwFyP_2wZo4qIIB1VxSnOF-PJ7NyHZz9uySo9bz3gc5lr4cJHAuWvT8QsLGh38N-b8ci42Ndh5hUgN7D_-abhZL8ZT35Jz3_dN2d8GAnVvx3RP3eeuSXfX3sxUw.webp"
+            href="https://namu.wiki/w/%ED%83%9C%EC%96%91%EC%9D%98%20%ED%9B%84%EC%98%88"><img
+              src="https://i.namu.wiki/i/t2r5qHMwfakwohLAOc7TZDQd3MQ7Jd_ShzcX-YzzBRN9CbYNhxeFivr67UsmI-0bbLYLj2kM5SmodyS_aO-diA.webp"
               alt="" /></a><br />
-          2001년에 타케노우치 유타카, 진혜림 주연의 영화로 제작되었다.
-          타다이마 오카에리 엔딩의 전형적인 영화.
+              그 어떤 재난 앞에서도 물러서지 않겠노라. 그 어떤 총구 앞에서도 이 땅의 평화를 지키겠노라.
+              오늘 수많은 유시진과 수많은 강모연은 엄숙히 선서했다.
+              그들의 선서가 이 세상의 모든 땅에서, 이 세상의 모든 태양 아래에서 지켜지기를 나는 응원했다.
         </dd>
       </dl>
     </div>
 
     <div class="grid-item">
       <dl>
-        <dt>넷플릭스 소개: 삼체</dt>
+        <dt>드라마 소개 : 
+          사랑의 불시착</dt>
         <dd>
           <a target="_blank"
-            href="https://namu.wiki/w/%EC%82%BC%EC%B2%B4%28%EB%AF%B8%EA%B5%AD%20%EB%93%9C%EB%9D%BC%EB%A7%88%29">
+            href="https://namu.wiki/w/%EC%82%AC%EB%9E%91%EC%9D%98%20%EB%B6%88%EC%8B%9C%EC%B0%A9">
             <img
-              src="https://i.namu.wiki/i/oX1oa1g4_3hjnOfbeiX1KlJ_pQfzE-BG1ydHvLl_PLAjq-UOOGbF4nL9j7Zq-Duua0zf_Thf__So00aDy_HqLz-9Tu-SKgMY9rj4yGk3rALLHD-VGx5IssQkwwu4v4G2ptTs6uvLoFdQwLGWQoEXGA.webp"
+              src="https://i.namu.wiki/i/eC_jcSUWjqBu1Igs7Q6OASrHfDKPre6AZ-TAB_sIR60ydXKyvzpiiX_g8G1XxmL75UMbmM7lG-Ddc9-j2as525zK7hJSgjRkztO9rG_lNitmSp6oI_n7xWuFiaJHJR_MJx4_hfrGxdrR0Fi1FRP4vw.webp"
               alt="" /></a>
-          “물리학은 존재하지 않는다”라는 유서를 남기고 자살한 동료 과학자
-          '양둥'의 죽음이 석연치 않았던 '왕먀오'는 ...!
+              어느 날 돌풍과 함께 패러글라이딩 사고로 북한에 불시착한 재벌 2세 패션업계 사장 윤세리와 그녀를 숨기고 지키다 사랑하게 되는 특급 장교 리정혁의 절대 극비 로맨스를 그린다.
         </dd>
       </dl>
     </div>
     </a>
     <div class="grid-item">
       <dl>
-        <dt>영화소개 : 범죄도시4</dt>
+        <dt>드라마 소개 : 눈물의 여왕</dt>
         <dd>
-          <a target="_blank" href="https://namu.wiki/w/%EB%B2%94%EC%A3%84%EB%8F%84%EC%8B%9C4"><img
-              src="https://i.namu.wiki/i/UV5cDIV4GTiR81tpwd8qsWzna_HaavSVxpgjwWoJgV9ydIbARV4-9_1KaBhQT8Esd20jCHUcgD8ZXm8pCJirRTIWeFbXs6xIGHFHDv6ywuWbDTk7X_afpPTjLXOltjfhNUDTSpaelAvhJsEU7wBSFA.webp"
+          <a target="_blank" href="https://namu.wiki/w/%EB%88%88%EB%AC%BC%EC%9D%98%20%EC%97%AC%EC%99%95"><img
+              src="https://i.namu.wiki/i/PUTXmvYSJ0akQjtfyx_WBPaybpZAEylv3XzzswLTU_QBu5323bluAl4TI0uPilyG_3jM84vBtZ7Onk-HfVIdifqqeJm-4tabSPwFOPwF93MdeFLEW0vFyhHNCbbihLx1RKJgX7bfLuQPZ1WPIGT6fQ.webp"
               alt="" /></a>
-          2024년 2월 28일에 개봉한 드니 빌뇌브 감독의 듄 시리즈 실사영화.
-          2021년 영화 〈듄〉의 속편이다.
+              퀸즈 그룹 재벌 3세, 백화점의 여왕 '홍해인'. 용두리 이장 아들, 슈퍼마켓 왕자 '백현우'.
+              3년차 부부의 아찔한 위기와 기적처럼 다시 시작되는 사랑 이야기
         </dd>
       </dl>
     </div>
   </div>
 
-</body>
+  <h1>화면설계 그리드</h1>
+  <div class="grid-layout">
+    <div class="gl-item" id="header"><div id="head_title">
+      <h1 id="text">웹화면 구현 수업의 웹스터디 페이지</h1>
+      <h2 id="text">김동욱</h2>
+      <p id="text">
+        안녕하세요!<br />
+        <!-- TODO: 간단한 자기소개를 써주세요(1줄~2줄) -->
+        저는 목원대학교 컴퓨터공학과에 재학중인 김동욱입니다.
+        <br /><br />
+        <!-- FIXME: 폰트어썸에서 3개~5개 정도를 넣어주세요 -->
+        <i class="fa-brands fa-youtube fa-bounce fa-xl" style="color: #d7193f;"></i>
+        <i class="fa-solid fa-house fa-xl" style="color: #940fd2;"></i>
+        <i class="fa-brands fa-github fa-bounce fa-xl"></i>
+      </p>
+    </div></div>
+    <div class="gl-item" id="sidebar">사이드바 부분</div>
+    <div class="gl-item" id="content"><div class="flex-container">
+      <!-- FIXME: 지금 예제를 대체하는 콘텐츠로, 영화 또는 드라마 콘텐츠 4개 작성 -->
+      <div class="flex-item">
+        <dl>
+          <dt>드라마 소개 : 해를 품은 달</dt>
+          <dd>
+            <a target="_blank" href="https://namu.wiki/w/%ED%95%B4%EB%A5%BC%20%ED%92%88%EC%9D%80%20%EB%8B%AC(%EB%93%9C%EB%9D%BC%EB%A7%88)"><img
+                src="https://ojsfile.ohmynews.com/STD_IMG_FILE/2012/0224/IE001406563_STD.jpg"
+                alt="" /></a>
+                풋풋한 연우와 왕세자 훤의 첫만남, 그리고 첫사랑! 그리고 훤에게 반해버린 또다른 양반집 여식 보경. 우여곡절 끝에 연우는 훤의 세자빈에 간택되지만 이름 모를 병을 얻어 쫓겨나듯 출궁했다. 그리고 어느 날 조용히 숨을 거두었다 들었다.
+                그런데...8년이 지난 오늘, 죽어 무덤에 묻혔다던 연우 낭자가 훤의 눈앞에 나타난다! 그런데 연우 낭자가 아니라 무녀(巫女) 월이란다. 문득 훤은 8년 전 세자빈 허씨의 죽음에 의문이 생기기 시작하는데...
+          </dd>
+        </dl>
+      </div>
+      <div class="flex-item">
+        <dl>
+          <dt>드라마 소개 : 태양의 후예</dt>
+          <dd>
+            <a target="_blank"
+              href="https://namu.wiki/w/%ED%83%9C%EC%96%91%EC%9D%98%20%ED%9B%84%EC%98%88"><img
+                src="https://i.namu.wiki/i/t2r5qHMwfakwohLAOc7TZDQd3MQ7Jd_ShzcX-YzzBRN9CbYNhxeFivr67UsmI-0bbLYLj2kM5SmodyS_aO-diA.webp"
+                alt="" /></a><br />
+                그 어떤 재난 앞에서도 물러서지 않겠노라. 그 어떤 총구 앞에서도 이 땅의 평화를 지키겠노라.
+                오늘 수많은 유시진과 수많은 강모연은 엄숙히 선서했다.
+                그들의 선서가 이 세상의 모든 땅에서, 이 세상의 모든 태양 아래에서 지켜지기를 나는 응원했다.
+          </dd>
+        </dl>
+      </div>
+  
+      <div class="flex-item">
+        <dl>
+          <dt>드라마 소개 : 
+            사랑의 불시착</dt>
+          <dd>
+            <a target="_blank"
+              href="https://namu.wiki/w/%EC%82%AC%EB%9E%91%EC%9D%98%20%EB%B6%88%EC%8B%9C%EC%B0%A9">
+              <img
+                src="https://i.namu.wiki/i/eC_jcSUWjqBu1Igs7Q6OASrHfDKPre6AZ-TAB_sIR60ydXKyvzpiiX_g8G1XxmL75UMbmM7lG-Ddc9-j2as525zK7hJSgjRkztO9rG_lNitmSp6oI_n7xWuFiaJHJR_MJx4_hfrGxdrR0Fi1FRP4vw.webp"
+                alt="" /></a>
+                어느 날 돌풍과 함께 패러글라이딩 사고로 북한에 불시착한 재벌 2세 패션업계 사장 윤세리와 그녀를 숨기고 지키다 사랑하게 되는 특급 장교 리정혁의 절대 극비 로맨스를 그린다.
+          </dd>
+        </dl>
+      </div>
+      </a>
+      <div class="flex-item" id="f4">
+        <dl>
+          <dt>드라마 소개 : 눈물의 여왕</dt>
+          <dd>
+            <a target="_blank" href="https://namu.wiki/w/%EB%88%88%EB%AC%BC%EC%9D%98%20%EC%97%AC%EC%99%95"><img
+                src="https://i.namu.wiki/i/PUTXmvYSJ0akQjtfyx_WBPaybpZAEylv3XzzswLTU_QBu5323bluAl4TI0uPilyG_3jM84vBtZ7Onk-HfVIdifqqeJm-4tabSPwFOPwF93MdeFLEW0vFyhHNCbbihLx1RKJgX7bfLuQPZ1WPIGT6fQ.webp"
+                alt="" /></a>
+                퀸즈 그룹 재벌 3세, 백화점의 여왕 '홍해인'. 용두리 이장 아들, 슈퍼마켓 왕자 '백현우'.
+                3년차 부부의 아찔한 위기와 기적처럼 다시 시작되는 사랑 이야기
+          </dd>
+        </dl>
+      </div>
+    </div></div>
+    <div class="gl-item" id="footer">푸터</div>
+  </div>
 
+
+  <script src="./js/main.js"></script>
+</body>
 </html>
